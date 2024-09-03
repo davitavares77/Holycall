@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+}
+html{
+    background-color: rgb(187,148,87)
+}
+.container{
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 15px;
+    
+    
+}
+header{
+    background-color:#734C29;
+    width: 100%;
+    font-size: 50px;
+    height: 100px;
+    padding: 15px;
+}
+.logo{
+    width: 25%;
+    color: #ffffff;
+    margin-right: 16px;
+}
+.menu{
+    width: 50%;
+}
+.menu nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 30px;
+    position: relative;
+    margin: 20px;
+    justify-content: space-between;
+    display: inline-block;
+    
+    
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(15deg, #faf284, #ffef0c );
+    position: absolute;
+    top: 32px;
+    left: 0;
+    transition: 0.5s;
+}
+.menu nav a:hover::after{
+    width: 50px;
+}
+.pesquisa{
+    background-color:#734C29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+
+}
+.buscar-box{
+    width: 400px;
+    height: 40px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 45px;
+    
+}
+
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+    min-width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buscar-box .btn-fechar i{
+    font-size: 20px;
+    margin-left: 15px;
+}
+.buscar-box .lupa-buscar i{
+    font-size: 35px;
+   
+}
+.buscar-box .input-box{
+    position: absolute;
+    margin: -10px;
+    left: 80px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 40px;
+    
+}
+.buscar-box .input-box input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+main{
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;
+}
+
+.logo{
+    filter: drop-shadow(1px 1px 20px rgb(252, 252, 69)) ;
+}
+
+button{
+    height: 40px;
+    width: 90px;
+    
+}
+nav{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

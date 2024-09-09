@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchDataButton.addEventListener('click', function () {
         const query = searchInput.value;
         if (query) {
-            fetch(`https://bible-api.com/${query}`)
+            fetch(`https://bible-api.com/${query}?translation=almeida`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.text) {
